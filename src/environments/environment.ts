@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  BASE_URL: `https://rawg-video-games-database.p.rapidapi.com`,
   production: false
 };
 
