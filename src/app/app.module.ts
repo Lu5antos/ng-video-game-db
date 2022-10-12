@@ -15,6 +15,8 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomeComponent } from './components/home/home.component'; 
+import { HttpHeaderInterceptor } from './interceptors/http-headers.interceptors';
+import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptors';
 
 
 @NgModule({
@@ -38,7 +40,7 @@ import { HomeComponent } from './components/home/home.component';
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: HttpHeadersInterceptor,
+      useClass: HttpHeaderInterceptor,
       multi: true
     },
     {
