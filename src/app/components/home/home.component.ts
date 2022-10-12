@@ -10,8 +10,8 @@ import { HttpService } from 'src/app/services/http.service';
 })
 export class HomeComponent implements OnInit {
 
-  // public sort: string;
-  public games: Array<Game> = []
+  public sort: string;
+  public games: Array<Game>;
 
 
   constructor(
