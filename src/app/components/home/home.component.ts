@@ -29,12 +29,13 @@ export class HomeComponent implements OnInit {
     });
   }
 
+    // calls api to get game data
   searchGames(sort: string, search?: string): void {
     this.httpService
       .getGameList(sort, search)
       .subscribe((gameList:APIResponse<Game>) => {
         this.games = gameList.results;
-        console.log(gameList)
+        console.log(gameList);
       });
   }
 
