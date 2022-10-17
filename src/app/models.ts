@@ -12,6 +12,7 @@ export interface Game {
     ratings: Array<Rating>;
     screenshots: Array<Screenshots>;
     trailers: Array<Trailer>;
+    id: string;
 }
 
 export interface APIResponse<T> {
@@ -20,11 +21,13 @@ export interface APIResponse<T> {
 
 interface Genre {
     name: string;
+    
 }
 
 interface ParentPlatform{
     platform: {
         name: string;
+        slug: string;
     };
 }
 
