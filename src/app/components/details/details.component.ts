@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { Game } from 'src/app/models';
 import { HttpService } from 'src/app/services/http.service';
 
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
